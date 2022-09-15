@@ -1,0 +1,71 @@
+/* GENERAL */
+
+body {
+    background-color: $colorOscuroRaro;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+// 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+// Verdana, Geneva, Tahoma, sans-serif
+// 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+.navbar {
+    --bs-navbar-color: #f0bdff;
+    --bs-navbar-active-color: #8c52ff;
+    --bs-navbar-padding-x: 16px;
+    --bs-navbar-padding-y: 32px;
+
+    img {
+        justify-content: end;
+        margin: 8px;
+        width: 80px;
+        border-radius: 50%;
+    }
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    --bs-nav-link-hover-color: #8c52ff;
+}
+
+.navbar-dropdown.bg-color.transparent {
+    background: none;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    color: #fff;
+
+    &:hover {
+        color: hotpink;
+    }
+}
+
+a.nav-link {
+    font-size: x-large;
+}
+
+main {
+    @include main ($colorVioletaClaro)
+}
+
+.footer {
+    font-size: x-large;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorVioleta;
+
+    & p{
+        color: #fff;
+        margin-top: 16px;
+    }
+
+    & img{
+        filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(89deg) brightness(103%) contrast(103%);
+        height: 32px;
+        width: 32px;
+        margin: 16px;
+    }
+}

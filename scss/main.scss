@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// VARIABLES
+@import './variables/colores';
+@import './variables/extend';
+
+// SECCIONES
+@import './secciones/general';
+@import './secciones/index';
+@import './secciones/info';
+@import './secciones/install';

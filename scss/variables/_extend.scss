@@ -1,0 +1,22 @@
+%center{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+@mixin main ($background) {
+    min-height: 80vh;
+    border-color: $colorVioletaOscuro;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 8px 8px $colorRosita;
+    background-color: $background;
+    margin: 48px;
+    padding: 16px;
+    text-align: center;
+}
+
+%animationImage:hover {
+    transform: scale(1.10) translate(10px, 10px);
+    transition: 0.3s ease-in-out;
+}
